@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/spcheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/spimage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginStart="5dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/sptitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:text="商品标题"/>
+            <TextView
+                android:id="@+id/spprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="price"/>
+            <com.bwei.liyuekun20190120.CountView
+                android:id="@+id/count_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ></com.bwei.liyuekun20190120.CountView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
